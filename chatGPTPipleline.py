@@ -1,10 +1,6 @@
 import openai
 from typing import Optional
 
-
-prompt = "Summarize the following paper abstract and give the essential points for the novel method used in the minimum sentences possible."
-abstract = """U-Net and its extensions have achieved great success in medical image segmentation. However, due to the inherent local characteristics of ordinary convolution operations, U-Net encoder cannot effectively extract global context information. In addition, simple skip connections cannot capture salient features. In this work, we propose a fully convolutional segmentation network (CMU-Net) which incorporates hybrid convolutions and multi-scale attention gate. The ConvMixer module extracts global context information by mixing features at distant spatial locations. Moreover, the multi-scale attention gate emphasizes valuable features and achieves efficient skip connections. We evaluate the proposed method using both breast ultrasound datasets and a thyroid ultrasound image dataset; and CMU-Net achieves average Intersection over Union (IoU) values of 73.27% and 84.75%, and F1 scores of 84.81% and 91.71%."""
-
 class AbstractSummarizer:
     """
     Class to summarize an abstract using the chatGPT API.
